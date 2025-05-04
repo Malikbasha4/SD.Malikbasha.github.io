@@ -1,71 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Malik Basha SD - Portfolio</title>
-<style>
-  body { font-family: 'Arial', sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; color: #333; }
-.container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  h1, h2 { text-align: center; color: #333; }
-  ul { list-style-type: none; padding: 0; }
-  ul li { margin-bottom: 10px; font-weight: bold; }
-  p { line-height: 1.6; text-align: justify; }
-.highlight { font-weight: bold; color: #d35400; }
-  blockquote { font-style: italic; text-align: center; margin-top: 20px; color: #555; padding: 10px; border-left: 4px solid #333; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Basha - Data Analyst Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #2a2a2a;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        ul li {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2a2a2a;
+        }
+
+        .position {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .key-skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .key-skills li {
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .key-skills li:hover {
+            background-color: #0073e6;
+            color: white;
+        }
+
+        section h2 {
+            color: #003366;
+        }
+
+        ul li {
+            color: #555;
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <h1>Malik Basha SD</h1>
+    <div class="container">
+        <header>
+            <!-- Optional Profile Picture -->
+            <img src="path-to-your-photo.jpg" alt="Malik Basha" class="profile-img">
+            <h1>Malik Basha</h1>
+            <p class="job-title">Data Analyst | Content Data Specialist | CRM & API Operations</p>
+            <div class="contact">
+                <p>Email: sheakmalikbasha2001@gmail.com</p>
+                <p>Phone: +91 6374110793</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/malik-basha-sd-32863625b" target="_blank">www.linkedin.com/in/malik-basha-sd-32863625b</a></p>
+            </div>
+        </header>
 
-  <h2>Contact</h2>
-  <p><strong>Email:</strong> <a href="mailto:sheakmalikbasha2001@gmail.com">sheakmalikbasha2001@gmail.com</a></p>
-  <p><strong>Phone:</strong> <a href="tel:+16374110793">+1 637 411 0793</a></p>
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Results-oriented Data & Content Specialist with proven success in managing large-scale structured/unstructured datasets, API-driven workflows, and CRM platforms. Skilled in SQL, MySQL, API integration, metadata tagging, and automation scripting to improve data accuracy and workflow efficiency.</p>
+        </section>
 
-  <h2>Professional Summary</h2>
-  <p class="highlight">A detail-oriented <strong>Content Specialist</strong> in ice hockey, collaborating with Canadian teams at RinkNet Software to curate, analyze, and optimize scouting data. Passionate about sports analytics, content management, and digital storytelling.</p>
+        <section class="key-skills">
+            <h2>Key Skills</h2>
+            <ul>
+                <li>SQL & MySQL</li>
+                <li>API Integration</li>
+                <li>Metadata Tagging</li>
+                <li>Data Governance</li>
+                <li>CRM Systems (Zoho)</li>
+                <li>Python (Basic)</li>
+                <li>Agile Methodology</li>
+                <li>Data Automation</li>
+                <li>Data Cleaning</li>
+            </ul>
+        </section>
 
-  <h2>About Me</h2>
-  <p>I currently work at RinkNet Software, ensuring high-quality content and data accuracy for hockey scouting operations. Previously, I worked as a Software Engineering Intern at BONbLOC, focusing on system enhancements and data structuring.</p>
-  <p>My interests include content management, sports analytics, and leveraging technology for better storytelling. Outside of work, I enjoy reading, networking, and exploring innovative content strategies.</p>
-  <p class="highlight">I’m open to <strong>freelancing, consulting, and mentorship</strong>. If you're interested in collaborating, feel free to reach out!</p>
+        <section class="experience">
+            <h2>Professional Experience</h2>
 
-  <h2>Key Achievements</h2>
-  <ul>
-    <li>Optimized player data management, improving scouting efficiency.</li>
-    <li>Enhanced content workflow, reducing processing time by 30%.</li>
-    <li>Developed structured knowledge bases for better team collaboration.</li>
-  </ul>
+            <div class="job">
+                <h3 class="job-title">RinkNet Software (Banyan Software Group) — Chennai, India</h3>
+                <p class="position">Content Specialist / Data Coordinator | Jan 2024 – Present</p>
+                <ul>
+                    <li>Maintained data for 500+ sports teams across CHL, QMJHL, and OHL in a proprietary CMS, ensuring 100% accuracy.</li>
+                    <li>Executed 1,000+ updates per sprint through Jira-based ticketing system.</li>
+                    <li>Wrote SQL queries and integrated APIs to sync real-time player data, roster updates, and performance metrics.</li>
+                    <li>Collaborated with league officials and scouts to validate real-time data.</li>
+                </ul>
+            </div>
 
-  <h2>Experience</h2>
-  <ul>
-    <li><strong>Content Specialist</strong> - RinkNet Software (Current Role)</li>
-    <p>Managing and updating player information, curating ice hockey content, and collaborating with Canadian teams to ensure data accuracy.</p>
-    <li><strong>Software Engineering Intern</strong> - BONbLOC (Previous Role)</li>
-    <p>Worked on system enhancements, research-based content initiatives, and optimizing data structures for efficient processing.</p>
-  </ul>
+            <div class="job">
+                <h3 class="job-title">BONbLOC — Chennai, India</h3>
+                <p class="position">Software Engineering Trainee | May 2023 – Jan 2024</p>
+                <ul>
+                    <li>Reduced query load time by 15% by optimizing complex SQL/MySQL queries.</li>
+                    <li>Built Python automation tools to improve team efficiency by 20%.</li>
+                    <li>Conducted API testing during production cycles.</li>
+                    <li>Collaborated with dev teams to build data-driven UI dashboards.</li>
+                </ul>
+            </div>
+        </section>
 
-  <h2>Projects</h2>
-  <p>Led and contributed to impactful projects that enhanced content organization, optimized information flow, and improved user experience.</p>
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>B.Sc. in Physics with Computer Science</strong><br>Thiruvalluvar University, Vellore | 2019 – 2022</p>
+            <p>Class Representative – Elected as class representative for active communication between faculty and students, organizing events, and ensuring smooth operations within the class.</p>
+            <p>Company Quartermaster Sergeant (100+ cadets)</p>
+            <p>Awarded by IAS Officer for excellence in Republic Day event coordination.</p>
+        </section>
 
-  <h2>Notable Projects</h2>
-  <ul>
-    <li>Developed a structured player information system, improving content accessibility for global scouting.</li>
-    <li>Designed and implemented a streamlined workflow for managing trade and injury reports.</li>
-    <li>Created a content knowledge base that significantly enhanced editorial efficiency.</li>
-  </ul>
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Google Data Analytics Professional Certificate</li>
+                <li>SQL for Data Science (Coursera)</li>
+                <li>Content Strategy & Management</li>
+                <li>Introduction to Programming Using Python</li>
+                <li>Sports Management</li>
+                <li>Leadership & Team Management</li>
+            </ul>
+        </section>
 
-  <h2>Let’s Connect!</h2>
-  <p>If you’re looking for a passionate content specialist or want to discuss new opportunities, <strong>let’s connect and create something great!</strong></p>
+        <section class="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>English – Professional Fluency</li>
+                <li>Tamil – Native</li>
+                <li>Urdu – Bilingual Proficiency</li>
+            </ul>
+        </section>
 
-  <blockquote>"Excellence is not a skill, it's an attitude." - Ralph Marston</blockquote>
-  <blockquote>"The difference between ordinary and extraordinary is that little extra." - Jimmy Johnson</blockquote>
+        <section class="awards">
+            <h2>Awards & Recognition</h2>
+            <ul>
+                <li>Data Accuracy Excellence – Zero-error submissions at RinkNet</li>
+                <li>Sprint Efficiency Award – Improved delivery throughput by 30%</li>
+                <li>Republic Day Honor – Recognized by IAS Officer for leadership in logistics</li>
+            </ul>
+        </section>
 
-  <div class="contact-info">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:sheakmalikbasha2001@gmail.com">sheakmalikbasha2001@gmail.com</a></p>
-  </div>
-</div>
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Hockey Analytics – Follower of CHL/NHL stats and scouting data</li>
+                <li>Football Tactics – Enjoy match breakdowns, player metrics, and strategic insights</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
